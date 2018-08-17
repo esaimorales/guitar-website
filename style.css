@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+@import url(https://fonts.googleapis.com/css?family=Lekton);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.hero {
+	height: 100vh;
+	background: linear-gradient(45deg, rgba(123,123,123,.0), rgba(123,123,123,.0), rgba(234,236,198,.0), rgba(245,146,176,.0), rgba(52,219,216,.0)) 0 0 / 1000% no-repeat, url(background.jpg) 0 0 / cover no-repeat;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+	height: 100vh;
+	background: linear-gradient(45deg, rgba(123,123,123,.0), rgba(123,123,123,.0), rgba(234,236,198,.0), rgba(245,146,176,.0), rgba(52,219,216,.0)) 0 0 / 1000% no-repeat, url(background_mobile.jpg) 0 0 / cover no-repeat;
+}
+
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	/* font : normal 600 72px/1 'Open Sans', sans-serif; */
+	text-align: left;
+	/* white-space: nowrap; */
+	font-size: 80px;
+	font-family: 'Lekton', sans-serif;
+
+}
+
+h2{
+	font-family: 'Lekton', sans-serif;
+	color: gray;
+}
+
+h1 span {
+	display: block;
+	/* margin-top: 1em; */
+	font-size: 40px;
+	font-weight: 300;
+	font-family: 'Lekton', sans-serif;
+
+}
+
+.contents {
+	padding-bottom: 3em;
+	background-color: #fff;
+}
+.contents p {
+	width: 800px;
+	margin: 0 auto;
+	padding: 3em 3em 0;
+	color: #333;
+	font : normal 300 20px/1.8 'Open Sans', sans-serif;
+}
+
+.menu{
+	background: rgba(0,0,0,0);
+	display: inline-inline-block;
+	padding: 5px;
+	/* position: fixed; */
+	width: 100%;
+
+	/* fonts */
+	color: black;
+	font-weight: 300;
+	font-family: 'Lekton', sans-serif;
+	font-size: 1.6em;
+	text-align: center;
+}
+
+li{
+	display: inline-block;
+	padding-left: 1.2em;
+	padding-right: 1.2em;\
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+a{
+	color:black;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.link-wrapper {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+
+.inner-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  color:white;
+  background-color: lightgray;
+  transition: transform 0.3s;
+}
+.hover-2:hover:after {
+  transform: scaleX(1);
+}
